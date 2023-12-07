@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimate-Finaflo</title>
+    <link rel="shortcut icon" href="./Images/logo.jpg" type="image/x-icon" />
+
+    <!-- css files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estimation.css">
+      <!-- remixicon cdn -->
+      <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- -------------------------NAVIGATION------------ -->
+    <nav>
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="./Images/main-logo-black-3.png"
+            class="logo"
+            alt="Finaflo-logo"
+          />
+        </a>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#">Témoignages</a></li>
+          <li><a href="#">A propos de nous</a></li>
+          <li><a href="#">FAQS</a></li>
+        </ul>
+        <div class="nav-btns">
+          <a href="#"><button class="nav-btn-1">Inscription</button></a>
+          <a href="#" target="_blank"
+            ><button class="menu-btn">Connexion</button></a
+          >
+        </div>
+        <button class="toggle_menu-btn hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="22"
+            height="22"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+            ></path>
+          </svg>
+        </button>
+        <div class="toggle_menu-container">
+          <div class="toggle_menu-content">
+            <button class="toggle_menu-close">
+              <i class="ri-close-line"></i>
+            </button>
+            <ul>
+              <li><a href="#">ACCUEIL</a></li>
+              <li><a href="#">ENTREPRISE</a></li>
+              <li><a href="#">INSCRIPTION</a></li>
+            </ul>
+            <a href="#" target="_blank"
+              ><button class="btn-discover">Connexion</button></a
+            >
+          </div>
+        </div>
+
+        <div class="overlay"></div>
+      </div>
+    </nav>
+    <!-- -------------------------END OF NAVIGATION------------ -->
+
+
+      <!-- ------------------MAIN SECTION------------ -->
+      <section class="estimation_section">
+        <div class="container">
+          <div class="left">
+            <h2>Combien peut-on gagner ?</h2>
+            <div class="left_content">
+              <div class="box">
+                <h4>Êtes-vous majeur ?</h4>
+                <div class="input">
+                  <h3 class="estimate-age" data-estimate="age">Oui</h3>
+                  <span><i class="ri-arrow-down-s-line"></i></span>
+
+                  <div class="input-sub hidden ">
+                    <h4>Choisir des valeurs</h4>
+                    <ul>
+                      <li >Oui</li>
+                      <li>Non</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <h4>Avez-vous une carte d'identité ?</h4>
+                <div class="input">
+                  <h3 class="estimate-identityCard" data-estimate="identity">Non</h3>
+                  <span><i class="ri-arrow-down-s-line"></i></span>
+
+                  <div class="input-sub hidden ">
+                    <h4>Choisir des valeurs</h4>
+                    <ul>
+                      <li >Oui</li>
+                      <li>Non</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <h4>Êtes-vous motivé ?</h4>
+                <div class="input">
+                  <h3 class="estimate-motivated" data-estimate="motivated">Non</h3>
+                  <span><i class="ri-arrow-down-s-line"></i></span>
+
+                  <div class="input-sub hidden ">
+                    <h4>Choisir des valeurs</h4>
+                    <ul>
+                      <li>Oui</li>
+                      <li>Non</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <h4>Avez-vous trois amis à qui vous recommanderiez Loopring ?</h4>
+                <div class="input">
+                  <h3 class="estimate-referral" data-estimate="referral">Non</h3>
+                  <span><i class="ri-arrow-down-s-line"></i></span>
+
+                  <div class="input-sub hidden ">
+                    <h4>Choisir des valeurs</h4>
+                    <ul>
+                      <li>Oui</li>
+                      <li>Non</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="right">
+            <div class="top">
+              <div class="part-1">
+                <h2>Voici ce que tu peux gagner : </h2>
+              </div>
+              <div class="part-2">
+                <div class="box">
+                  <p class="description" >Êtes-Vous Majeur ?</p>
+                  <p class="part-2-value estimate-age-value" data-value="age">Oui</p>
+                </div>
+                <div class="box">
+                  <p class="description">Avez-Vous Une Carte D'identité ?</p>
+                  <p class="part-2-value estimate-identityCard-value" data-value="identity">Non</p>
+                </div>
+                <div class="box">
+                  <p class="description" >Êtes-Vous Motivé  ?</p>
+                  <p class="part-2-value estimate-motivated-value" data-value="motivated">Non</p>
+                </div>
+                <div class="box">
+                  <p class="description" >Avez-Vous Trois Amis À Qui Vous Recommanderiez Loopring?</p>
+                  <p class="part-2-value estimate-referral-value" data-value="referral">Non</p>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <button class="menu-btn calculate-btn">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="estimate-loader ">
+          <img src="./videos/estimate-loader-unscreen.gif" alt="">
+        </div>
+      </section>
+      <div class="estimate-popup">
+        <div class="popup-background"></div>
+        <div class="popup-container">
+          <button><i class="ri-close-line"></i></button>
+          <div class="popup-top">
+            <img src="./Images/congrats.gif" alt="">
+          </div>
+          <div class="popup-bottom">
+            <p>Congrats you won 100$</p>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------END OF MAIN SECTION------------ -->
+
+<!-- ---------------------CTA------------ -->
+<section class="cta_section">
+  <div class="container">
+    <div class="cta">
+      <h2>
+        Besoin d'aide ? Nos héros du service client répondront à toutes
+        vos questions. ?
+      </h2>
+      <a href="#" target="_blank"
+        ><button class="btn-discover">Contactez-nous</button></a
+      >
+    </div>
+  </div>
+</section>
+<!-- ---------------------END OF CTA------------ -->
+
+<footer>
+  <div class="container">
+    <!-- <img src="./Images/logo-" alt=""> -->
+    <div class="f-1">
+      <a href="#"
+        ><img src="./Images/main-logo-4.png" alt="" class="f-logo"
+      /></a>
+      <p style="line-height: 1.4">
+        1234 Main Street, Cityville,<br />
+        State, Zip Code
+      </p>
+      <a href="#" class="f-contact"
+        ><i class="ri-mail-line"></i>
+        <span>equipe.finaflo@gmail.com</span></a
+      >
+      <br />
+      <a href="#" class="f-contact"
+        ><i class="ri-phone-line"></i> <span>+123 456 789</span></a
+      >
+      <!-- <div class="f-socials">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-whatsapp-line"></i></a>
+        <a href="#"><i class="ri-telegram-line"></i></a>
+    </div> -->
+    </div>
+    <div class="f-2">
+      <h2>Explore</h2>
+      <a href="#">Home</a>
+      <a href="#">Testimonials</a>
+      <a href="#">About us</a>
+      <a href="#">FAQS</a>
+    </div>
+    <div class="f-3">
+      <h2>Support</h2>
+      <a href="#">Contact us</a>
+      <a href="#">Terms & conditions</a>
+      <a href="#">Legal Information</a>
+      <a href="#">conditions de retractation</a>
+      <a href="#">Register</a>
+    </div>
+    <div class="f-3">
+      <h2>Socials</h2>
+      <!-- <a href="#">Contact us</a>
+      <a href="#">Terms & conditions</a>
+      <a href="#">Legal Information</a>
+      <a href="#">conditions de retractation</a>
+      <a href="#">Register</a> -->
+      <div class="f-socials">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-whatsapp-line"></i></a>
+        <a href="#"><i class="ri-telegram-line"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <div class="container">
+      <div class="left">
+        <p>© Finaflo Pvt Ltd. All Rights Reserved.</p>
+      </div>
+      <div class="right">
+        <img src="./Images/badge-1-transparent.png" alt="" />
+        <img src="./Images/badge-2-transparent.png" alt="" />
+        <img src="./Images/badge-3-transparent.png" alt="" />
+        <img src="./Images/badge-4-transparent.png" alt="" />
+        <img src="./Images/badge-5.png" alt="" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <!-- <script src="script.js"></script> -->
+      <script src="estimation.js"></script>
+</body>
+</html>

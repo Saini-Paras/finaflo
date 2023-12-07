@@ -74,6 +74,7 @@ header::before {
 nav {
   background-color: var(--clr-white);
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 200;
 }
 
 nav .container {
@@ -225,15 +226,16 @@ margin-left: 8rem;
   height: 39rem;
 }
 .hero .left {
-  width: 55%;
+  width: 60%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 0.9rem;
+  /* border: 2px solid red; */
 }
 .hero .left h1 {
-  font-size: 5rem;
+  font-size: 4.8rem;
   line-height: 1;
   color: rgb(167, 167, 167);
   color: rgb(0, 0, 0);
@@ -245,6 +247,7 @@ margin-left: 8rem;
 .hero .left p {
   font-size: 1.2rem;
   margin-bottom: 1.3rem;
+  line-height: 1.35;
   width: 85%;
   color: var(--clr-white);
 }
@@ -383,8 +386,8 @@ margin-left: 8rem;
   display: flex;
   align-items: center;
   gap: 5rem;
-  width: 90%;
   margin: 2rem auto;
+  /* border: 2px solid red; */
 }
 .section-2-content .right h2 {
   color: var(--clr-black);
@@ -392,7 +395,8 @@ margin-left: 8rem;
   margin-bottom: 0.9rem;
 }
 .section-2-content .right {
-  width: 45%;
+  width: 55%;
+  /* border: 2px solid red; */
 }
 .section-2-content .right .btn-start {
   width: 12rem;
@@ -499,10 +503,64 @@ body{
   height: 100%;
   object-fit: cover;
 }
+.tes-line{
+  width: 100%;
+  height: .1rem;
+  height: .5rem;
+  background-color: var(--clr-primary);
+  background-color: #565656;
+  margin: 6rem 0 2rem 0;
+}
 .conversation_container{
-  height: 40rem;
+  height: auto;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 3rem;
+  padding: 5rem 0;
+}
+.conversation-box{
+  background-color: #909090;
+  background-color: #c5c5c5;
+  /* padding: .5rem; */
+  width: 25%;
+  height: 35rem;
+  /* border: 2px saddlebrown solid; */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+} 
+.conversation-box img{
+  /* border-radius: 10px; */
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.c-container{
+  display: flex;
+  gap: 2rem;
+}
+.c-box-2{
+  margin-top: 5rem;
+}
+.c-box-3{
+  margin-top: -2rem;
+}
+.c-box-4{
+  margin-top: 4rem;
+}
+.c-box-5{
+  margin-top: -5.5rem;
+}
+.c-box-6{
+  margin-top: -.7rem;
+}
+.c-box-7{
+  margin-top: -7.8rem;
+}
+.c-box-8{
+  margin-top: -2rem;
 }
 /* --------------   END OF TESTIMONIAL ---------- */
 /* --------------   FAQ ---------- */
